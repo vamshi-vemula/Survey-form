@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title" class="text-center">Job Interview Form</h1>
+        <p id="description" class="text-center">
+        Fill the form to apply for Job.
+        </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-item">
+        <label id="name-label" for="name">Name</label>
+        <input
+            type="text"
+            name="name"
+            id="name" 
+            class="form-control" 
+            placeholder="Enter your full name" 
+            required 
+        />
+        </div>
+        <div class="form-item">
+        <label id="email-label" for="email">Email</label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+        />
+        </div>
+        <div class="form-item">
+        <label id="number-label" for="number"
+            >Age <span class="clue"> (optional)</span></label
+        >
+        <input
+            type="number"
+            name="age"
+            id="number"
+            min="20"
+            max="50"
+            class="form-control"
+            placeholder="Age"
+        />
+        </div>
+        <div class="form-item">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Freelancer</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+    
+        <div class="form-item" id="radio">
+        <p>Do you have any work experience ?</p>
+        <label>
+            <input
+            name="experience"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            />Yes</label
+        >
+        <label>
+            <input
+            name="experience"
+            value="no"
+            type="radio"
+            class="input-radio"
+            />No</label
+        >
+        </div>
+    
+        <div class="form-item" id="checkboxs">
+        <p>
+            What skills you are aware of ?
+            <span class="clue">(Check all that apply)</span>
+        </p>
+    
+        <label>
+            <input
+            name="prefer"
+            value="web-dev"
+            type="checkbox"
+            class="input-checkbox"
+            /> Web Development
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="app-dev"
+            type="checkbox"
+            class="input-checkbox"
+            /> App Development
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="seo"
+            type="checkbox"
+            class="input-checkbox"
+            /> SEO Optimization
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="testing"
+            type="checkbox"
+            class="input-checkbox"
+            /> Software Testing
+        </label>
+        <label>
+            <input
+            name="prefer"
+            value="db"
+            type="checkbox"
+            class="input-checkbox"
+            /> Database Managemnet
+        </label>
+        
+        </div>
+    
+        <div class="form-item">
+        <p>If you have any work samples or projects , Please provide link to them.</p>
+        <textarea
+            id="extra"
+            class="input-textarea"
+            name="extra"
+            placeholder="Enter Here !"
+        ></textarea>
+        </div>
+    
+        <div class="form-item">
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+        </button>
+        </div>
+    </form>   
+</body>
+</html>

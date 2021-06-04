@@ -1,0 +1,106 @@
+ * {
+     padding: 0px;
+     margin: 0px;
+     font-family: sans-serif;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ body {
+     background:url("Assets/bg-2.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding: 25px 20px;
+ }
+
+ #title {
+    font-size: 35px;
+    font-weight: bolder;
+ }
+
+ #description {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ form {
+     background-color: #191d1d90;
+     border-radius: 20px;
+     padding: 25px 5%;
+     color: white;
+     margin: 20px auto;
+ }
+
+ .form-item {
+    display: block;
+    margin: 15px auto;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+ }
+
+ .form-item label , .form-item input , .form-item p , .form-item select {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ .form-control {
+     width: 95%;
+     font-size: 16px;
+     padding: 6px 6px;
+     border-radius: 5px;
+     background-color: aliceblue;
+ }
+ #dropdown {
+     width: auto;
+ }
+
+ #radio label {
+     margin: 0px 20px;
+ }
+
+ #radio label , #radio input {
+     display: inline-block;
+ }
+
+#checkboxs label {
+    margin: 0px 20px 0px 0px;
+}
+
+ #checkboxs label , #checkboxs input {
+     display: inline-block;
+ }
+ 
+ .form-item .clue {
+     color: #a6ff00;
+ }
+
+ .form-item textarea {
+     width: 95%;
+     margin: 0px auto;
+     background-color: aliceblue;
+     border-radius: 6px;
+     padding: 8px 10px;
+     font-size: 17px;
+ }
+ .form-item #submit {
+     background-color: #a6ff00;
+     width: 100%;
+     border-radius: 6px;
+     padding: 10px 10px;
+     font-size: 20px;
+ }
+
+ @media screen and (min-width:600px) {
+    form {
+        width: 70%;
+    }
+ }
+ @media screen and (min-width:940px) {
+    form {
+        width: 50%;
+    }
+ }
